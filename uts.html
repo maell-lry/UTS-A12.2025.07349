@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bentala - Promo Maggot BSF</title>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap5.3.8/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Bentala</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
+            <li class="nav-item"><a class="nav-link" href="#promo">Promo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pesan">Pesan</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="tentang">
+      <div class="container">
+        <p class="label-promo">Promo Special World Environment Day</p>
+        <h1>Pakan dan Pupuk Alami dari Maggot BSF</h1>
+        <p>Ubah sampah organikmu jadi pakan ternak dan pupuk organik dengan maggot BSF. Yuk ikut promonya, hanya sampai 15 Juni 2027!</p>
+        <a href="#pesan" class="btn btn-promo">Pesan Sekarang</a>
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section id="keunggulan">
+      <div class="container">
+        <h2>Kenapa Pilih Maggot BSF?</h2>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="item-unggul">
+              <h5>Kaya Protein</h5>
+              <p>Membantu pertumbuhan ikan, ayam, dan burung agar sehat dan kuat.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="item-unggul">
+              <h5>Hemat Biaya</h5>
+              <p>Lebih murah dibanding pelet pabrikan.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="item-unggul">
+              <h5>Ramah Lingkungan</h5>
+              <p>Dibudidayakan dengan mengolah sampah organik.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO -->
+    <section id="promo">
+      <div class="container">
+        <h2>Produk Promo</h2>
+        <p>Diskon hingga 20%, plus klaim bonus gratis pilihanmu. Pesanan tiba dalam 2-3 hari di seluruh pulau Jawa.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <article class="card-promo">
+              <img src="Image/MaggotSegar.jpeg" alt="Maggot Segar" class="gambar-produk">
+              <h5>Maggot Segar</h5>
+              <p><del>25.000/kg</del> <strong>20.000<small>/kg</small></strong></p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card-promo">
+              <img src="Image/MaggotKering.jpeg" alt="Maggot Kering" class="gambar-produk">
+              <h5>Maggot Kering</h5>
+              <p><del>75.000/kg</del> <strong>60.000<small>/kg</small></strong></p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card-promo">
+              <img src="Image/Kasgot.jpeg" alt="Kasgot (Pupuk Organik)" class="gambar-produk">
+              <h5>Kasgot (Pupuk Organik)</h5>
+              <p><del>8.000/kg</del> <strong>6.400<small>/kg</small></strong></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM PEMESANAN -->
+    <section id="pesan">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2>Form Pemesanan</h2>
+
+            <form id="formPesan">
+              <!-- type nama -->
+              <div class="mb-3">
+                <label for="fnama" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="fnama" name="nama" placeholder="Masukkan nama lengkap" required>
+              </div>
+
+              <!-- type email -->
+              <div class="mb-3">
+                <label for="femail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="femail" name="email" placeholder="contoh@email.com" required>
+              </div>
+
+              <!-- type telepon -->
+              <div class="mb-3">
+                <label for="fhp" class="form-label">No. HP / WhatsApp</label>
+                <input type="tel" class="form-control" id="fhp" name="hp" placeholder="08xxxxxxxxxx" required>
+              </div>
+
+              <!-- type alamat -->
+              <div class="mb-3">
+                <label for="falamat" class="form-label">Alamat Pengiriman</label>
+                <textarea class="form-control" id="falamat" name="alamat" rows="3" placeholder="Tuliskan alamat lengkap" required></textarea>
+              </div>
+
+              <!-- select kota -->
+               <div class="mb-3">
+                <label for="fkota" class="form-label">Kota</label>
+                <select class="form-select" id="fkota" name="kota" required>
+                  <option value="" disabled selected>Pilih Kota</option>
+                  <option value="Semarang">Semarang</option>
+                  <option value="Kudus">Kudus</option>
+                  <option value="Demak">Demak</option>
+                  <option value="Pekalongan">Pekalongan</option>
+                  <option value="Tegal">Tegal</option>
+                  <option value="Surabaya">Surabaya</option>
+                  <option value="Jakarta">Jakarta</option>
+                </select>
+              </div>
+
+              <!-- checkbox hobi -->
+              <div class="mb-3">
+                <label class="form-label d-block">Hobi</label>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="fhobi4" name="hobi[]" value="Membaca">
+                  <label class="form-check-label" for="fhobi4">Membaca</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="fhobi5" name="hobi[]" value="Koding / Programming">
+                  <label class="form-check-label" for="fhobi5">Koding</label>
+                </div>      
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="fhobi6" name="hobi[]" value="Berenang">
+                  <label class="form-check-label" for="fhobi6">Berenang</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="fhobi7" name="hobi[]" value="Menggambar">
+                  <label class="form-check-label" for="fhobi7">Menggambar</label>
+                </div>
+              </div>    
+
+              <!-- jenis maggot -->
+              <div class="mb-3">
+                <label class="form-label d-block">Jenis Maggot</label>
+                <input type="radio" class="btn-check" name="jenis" id="fsegar" value="Maggot Segar" autocomplete="off" checked>
+                <label class="btn btn-outline-secondary" for="fsegar">Maggot Segar</label>
+
+                <input type="radio" class="btn-check" name="jenis" id="fkering" value="Maggot Kering" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="fkering">Maggot Kering</label>
+
+                <input type="radio" class="btn-check" name="jenis" id="fkasgot" value="Kasgot (Pupuk Organik)" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="fkasgot">Kasgot (Pupuk Organik)</label>
+              </div>
+
+              <!-- dropdown berat -->
+              <div class="mb-3">
+                <label for="fberat" class="form-label">Berat Produk </label>
+                <select class="form-select" id="fberat" name="berat" required>
+                  <option value="" disabled selected>Pilih Berat Produk</option>
+                  <option value="250">250 gram</option>
+                  <option value="500">500 gram</option>
+                  <option value="1000">1 kg</option>
+                  <option value="5000">5 kg</option>
+                  <option value="10000">10 kg</option>
+                </select>
+              </div>
+
+              <!-- jumlah -->
+              <div class="mb-3">
+                <label for="fjumlah" class="form-label">Jumlah</label>
+                <input type="number" class="form-control" id="fjumlah" name="jumlah" placeholder="Masukkan jumlah" min="1" required>
+              </div>
+
+              <!-- dropdown bonus -->
+              <div class="mb-3">
+                <label for="fbonus" class="form-label">Bonus</label>
+                <select class="form-select" id="fbonus" name="bonus">
+                  <option value="" disabled selected>Pilih Bonus</option>
+                  <option value="Maggot Segar 250 gram">Maggot Segar 250 gram</option>
+                  <option value="Maggot Kering 150 gram">Maggot Kering 150 gram</option>
+                  <option value="Kasgot (Pupuk Organik) 500 gram">Kasgot (Pupuk Organik) 500 gram</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btnKirim">Kirim Pesanan</button>
+              <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
+
+            <!-- tempat pesan hasil -->
+            <div id="hasil" class="d-none"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <p>&copy; 2026 Bentala | Meutia Syafitri - A12.2025.07349</p>
+    </div>
+  </footer>
+
+  <script src="bootstrap5.3.8/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
